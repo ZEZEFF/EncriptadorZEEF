@@ -1,0 +1,153 @@
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(100deg, transparent, pink);
+}
+.encabezado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  align-items: center;
+  max-width: 992px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .encabezado {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+.logo {
+  width: 12rem;
+}
+.titulo {
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+  grid-column: 1/3;
+}
+@media (min-width: 768px) {
+  .titulo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+.principal {
+  padding-top: 3rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  max-width: 992px;
+}
+@media (min-width: 768px) {
+  .principal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.mensaje {
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.mensaje__texto {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.5rem;
+  min-height: 50rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  outline: none;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.grupo-btn {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 416px) {
+  .grupo-btn {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+.grupo-btn__boton {
+  width: 100%;
+  background-color: rgb(236, 178, 248);
+  color: rgb(245, 245, 245);
+  padding: 1rem 0;
+  border-radius: 0.7rem;
+  transition: background-color 0.3s ease-out;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.grupo-btn__boton:hover {
+  background-color: rgba(231, 0, 252, 0.7);
+}
+.grupo-advertencia {
+  font-family: "Rajdhani", sans-serif;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.resultado {
+  font-size: 2.5rem;
+  font-family: "Rajdhani", sans-serif;
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.resultado__texto {
+  min-height: 50rem;
+  margin-bottom: 1rem;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.resultado__boton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(236, 178, 248);
+  color: rgb(245, 245, 245);
+  padding: 1rem 0;
+  border-radius: 0.7rem;
+  transition: background-color 0.3s ease-out;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.grupo-advertencia__titulo {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+.grupo-advertencia__texto {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.desactivado {
+  display: none;
+}
+html {
+  box-sizing: border-box;
+  font-size: 80.5%;
+}
